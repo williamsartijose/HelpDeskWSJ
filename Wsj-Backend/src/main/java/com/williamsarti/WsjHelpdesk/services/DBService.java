@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 import com.williamsarti.WsjHelpdesk.domain.Chamado;
 import com.williamsarti.WsjHelpdesk.domain.Cliente;
 import com.williamsarti.WsjHelpdesk.domain.Tecnico;
-import com.williamsarti.WsjHelpdesk.enums.Perfil;
-import com.williamsarti.WsjHelpdesk.enums.Prioridade;
-import com.williamsarti.WsjHelpdesk.enums.Status;
+import com.williamsarti.WsjHelpdesk.domain.enums.Perfil;
+import com.williamsarti.WsjHelpdesk.domain.enums.Prioridade;
+import com.williamsarti.WsjHelpdesk.domain.enums.Status;
 import com.williamsarti.WsjHelpdesk.repositories.ChamadoRepository;
 import com.williamsarti.WsjHelpdesk.repositories.PessoaRepository;
 

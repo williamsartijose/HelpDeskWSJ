@@ -1,4 +1,4 @@
-package com.williamsarti.WsjHelpdesk.dtos;
+package com.williamsarti.WsjHelpdesk.domain.dtos;
 import java.io.Serializable;
 import java.time.LocalDate;
 

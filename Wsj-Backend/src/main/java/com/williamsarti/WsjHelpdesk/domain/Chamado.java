@@ -10,9 +10,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-
-import com.williamsarti.WsjHelpdesk.enums.Prioridade;
-import com.williamsarti.WsjHelpdesk.enums.Status;
+import com.williamsarti.WsjHelpdesk.domain.enums.Prioridade;
+import com.williamsarti.WsjHelpdesk.domain.enums.Status;
 
 @Entity
 public class Chamado implements Serializable {

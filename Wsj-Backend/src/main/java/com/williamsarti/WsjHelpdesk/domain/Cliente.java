@@ -8,9 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
-import com.williamsarti.WsjHelpdesk.enums.Perfil;
-import com.williamsarti.WsjHelpdesk.dtos.ClienteDTO;
+import com.williamsarti.WsjHelpdesk.domain.dtos.ClienteDTO;
+import com.williamsarti.WsjHelpdesk.domain.enums.Perfil;
 
 @Entity
 public class Cliente extends Pessoa {

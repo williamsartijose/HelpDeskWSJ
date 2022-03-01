@@ -1,4 +1,4 @@
-package com.williamsarti.WsjHelpdesk.exceptions;
+package com.williamsarti.WsjHelpdesk.services.exceptions;
 
 public class ObjectnotFoundException extends RuntimeException {
 	private static final long serialVersionUID = 1L;

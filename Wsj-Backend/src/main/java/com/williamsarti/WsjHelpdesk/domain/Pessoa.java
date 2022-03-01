@@ -16,8 +16,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import com.fasterxml.jackson.annotation.JsonFormat;
-
-import com.williamsarti.WsjHelpdesk.enums.Perfil;
+import com.williamsarti.WsjHelpdesk.domain.enums.Perfil;
 
 @Entity
 public abstract class Pessoa implements Serializable {

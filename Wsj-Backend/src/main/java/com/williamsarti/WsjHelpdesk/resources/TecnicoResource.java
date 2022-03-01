@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.williamsarti.WsjHelpdesk.domain.Tecnico;
-import com.williamsarti.WsjHelpdesk.dtos.TecnicoDTO;
+import com.williamsarti.WsjHelpdesk.domain.dtos.TecnicoDTO;
 import com.williamsarti.WsjHelpdesk.services.TecnicoService;
 
 @RestController

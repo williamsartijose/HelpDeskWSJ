@@ -8,8 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.williamsarti.WsjHelpdesk.dtos.TecnicoDTO;
-import com.williamsarti.WsjHelpdesk.enums.Perfil;
+import com.williamsarti.WsjHelpdesk.domain.dtos.TecnicoDTO;
+import com.williamsarti.WsjHelpdesk.domain.enums.Perfil;
 
 
 @Entity

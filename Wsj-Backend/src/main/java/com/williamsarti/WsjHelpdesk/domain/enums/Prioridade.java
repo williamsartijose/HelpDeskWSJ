@@ -1,4 +1,4 @@
-package com.williamsarti.WsjHelpdesk.enums;
+package com.williamsarti.WsjHelpdesk.domain.enums;
 
 public enum Prioridade {
 

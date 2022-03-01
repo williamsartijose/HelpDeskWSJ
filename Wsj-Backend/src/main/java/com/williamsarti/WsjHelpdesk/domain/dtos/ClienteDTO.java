@@ -1,4 +1,6 @@
-package com.williamsarti.WsjHelpdesk.dtos;
+package com.williamsarti.WsjHelpdesk.domain.dtos;
+
+
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -8,15 +10,14 @@ import java.util.stream.Collectors;
 import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.br.CPF;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 
-import com.williamsarti.WsjHelpdesk.domain.Tecnico;
-import com.williamsarti.WsjHelpdesk.enums.Perfil;
+import com.williamsarti.WsjHelpdesk.domain.Cliente;
+import com.williamsarti.WsjHelpdesk.domain.enums.Perfil;
 
 
-public class TecnicoDTO implements Serializable {
+public class ClienteDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	protected Integer id;
@@ -34,12 +35,12 @@ public class TecnicoDTO implements Serializable {
 	@JsonFormat(pattern = "dd/MM/yyyy")
 	protected LocalDate dataCriacao = LocalDate.now();
 
-	public TecnicoDTO() {
+	public ClienteDTO() {
 		super();
 		addPerfil(Perfil.CLIENTE);
 	}
 
-	public TecnicoDTO(Tecnico obj) {
+	public ClienteDTO(Cliente obj) {
 		super();
 		this.id = obj.getId();
 		this.nome = obj.getNome();
