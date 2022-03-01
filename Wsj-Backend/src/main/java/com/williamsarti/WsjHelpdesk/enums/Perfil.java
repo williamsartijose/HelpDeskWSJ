@@ -1,4 +1,4 @@
-package com.williamsarti.WsjHelpdesk.domain.enums;
+package com.williamsarti.WsjHelpdesk.enums;
 
 public enum Perfil {
 
