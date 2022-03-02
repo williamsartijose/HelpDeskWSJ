@@ -1,6 +1,5 @@
 package com.williamsarti.WsjHelpdesk.domain.dtos;
 
-
 import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -12,10 +11,8 @@ import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.br.CPF;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-
 import com.williamsarti.WsjHelpdesk.domain.Cliente;
 import com.williamsarti.WsjHelpdesk.domain.enums.Perfil;
-
 
 public class ClienteDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
