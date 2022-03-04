@@ -3,7 +3,7 @@ import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { Credenciais } from 'src/app/models/credenciais';
-import { AuthService } from 'src/app/service/auth.service';
+import { AuthService } from 'src/app/services/auth.service';
 
 
 @Component({
