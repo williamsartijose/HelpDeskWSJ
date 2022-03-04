@@ -20,18 +20,20 @@
           </a>
           <a mat-list-item href="https://github.com/williamsartijose/HelpDeskWSJ" target="_blank">
              <i class="material-icons">code</i>
-             Github
-          </a>
-      
-       </mat-nav-list>
-    </mat-drawer>
-
-    <div class="sidenav-content">
-       <app-header></app-header>
-        <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
+            </a>
+            <a mat-list-item (click)="logout()">
+               <i class="material-icons">logout</i>
+               Logout
+            </a>
+         </mat-nav-list>
+      </mat-drawer>
+   
+      <div class="sidenav-content">
+         <app-header></app-header>
+         <button class="menu mat-elevation-z8" (click)="drawer.toggle()" mat-icon-button>
             <mat-icon>menu</mat-icon>
-      </button>
-      <router-outlet></router-outlet>
-    </div>
-  
-  </mat-drawer-container>
+         </button>
+         <router-outlet></router-outlet>
+      </div>
+   
+   </mat-drawer-container>
