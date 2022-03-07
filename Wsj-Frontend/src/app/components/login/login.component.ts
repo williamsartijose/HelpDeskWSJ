@@ -5,14 +5,12 @@ import { ToastrService } from 'ngx-toastr';
 import { Credenciais } from 'src/app/models/credenciais';
 import { AuthService } from 'src/app/services/auth.service';
 
-
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-
 
   creds: Credenciais = {
     email: '',
@@ -34,17 +32,12 @@ export class LoginComponent implements OnInit {
       this.service.successfulLogin(resposta.headers.get('Authorization').substring(7));
       this.router.navigate([''])
     }, () => {
-        this.toast.error('Usuário e/ou senha inválidos');
-      })
-    }
-  validaCampos(): boolean{
-if( this.email.valid && this.senha.valid){
-  return true;
-} else{
-  return false;
-} 
-  }
-  
-
+      this.toast.error('Usuário e/ou senha inválidos');
+    })
   }
 
+  validaCampos(): boolean {
+    return this.email.valid && this.senha.valid
+  }
+
+}

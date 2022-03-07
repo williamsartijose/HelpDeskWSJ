@@ -1,25 +1,24 @@
 <div class="container">
-    <form class="form mat-elevation-z8">
+   <form class="form mat-elevation-z8">
 
+      <h1>Help Desk - Dicas de um DEV</h1>
 
-        <h1>Assistência Técnica - Wsj Informática</h1> 
+      <img src="assets/img/login-image.svg" alt="Help Desk - Dicas de um DEV">
 
-        <img src="assets/img/login-image.svg" alt="Help Desk -  Wsj Informática ">
+      <mat-form-field class="full-width" appearance="outline">
+         <mat-label>E-mail</mat-label>
+         <input 
+         [formControl]="email"
+         required
+         [(ngModel)]="creds.email" 
+         name="email" 
+         matInput 
+         placeholder="Ex. fulano@mail.com">
+         <mat-icon matSuffix>email</mat-icon>
+      </mat-form-field>
 
-        <mat-form-field class="full-width" appearance="fill">
-            <mat-label>E-mail</mat-label>
-            <input 
-            [formControl]="email"
-            required
-            [(ngModel)]="creds.email" 
-            name="email" 
-            matInput 
-            placeholder="Ex. fulano@mail.com">
-         </mat-form-field>
-
-
-        <mat-form-field class="full-width" appearance="fill">
-            <mat-label>Senha</mat-label>
+      <mat-form-field class="full-width" appearance="outline">
+         <mat-label>Senha</mat-label>
          <input 
          [formControl]="senha"
          required
@@ -30,6 +29,8 @@
          placeholder="Ex. 123">
          <mat-icon matSuffix>password</mat-icon>
       </mat-form-field>
-          <button (click)="logar()" [disabled]="!validaCampos()"  class="full-width mat-elevation-z4" mat-stroked-button color="primary">Login</button>
-      </form>
+
+      <button (click)="logar()" [disabled]="!validaCampos()" class="full-width mat-elevation-z4" mat-stroked-button color="primary">Login</button>
+   </form>
+
 </div>
