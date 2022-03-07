@@ -1,38 +1,29 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { JwtHelperService } from '@auth0/angular-jwt';
+import { Observable } from 'rxjs';
 import { API_CONFIG } from '../config/api.config';
-import { Credenciais } from '../models/credenciais';
+import { Chamado } from '../models/chamado';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
-
-  jwtService: JwtHelperService = new JwtHelperService();
+export class ChamadoService {
 
   constructor(private http: HttpClient) { }
 
-  authenticate(creds: Credenciais) {
-    return this.http.post(`${API_CONFIG.baseUrl}/login`, creds, {
-      observe: 'response',
-      responseType: 'text'
-    })
+  findById(id: any): Observable<Chamado> {
+    return this.http.get<Chamado>(`${API_CONFIG.baseUrl}/chamados/${id}`);
   }
 
-  successfulLogin(authToken: string) {
-    localStorage.setItem('token', authToken);
+  findAll(): Observable<Chamado[]> {
+    return this.http.get<Chamado[]>(`${API_CONFIG.baseUrl}/chamados`);
   }
 
-  isAuthenticated() {
-    let token = localStorage.getItem('token')
-    if(token != null) {
-      return !this.jwtService.isTokenExpired(token)
-    }
-    return false
+  create(chamado: Chamado): Observable<Chamado> {
+    return this.http.post<Chamado>(`${API_CONFIG.baseUrl}/chamados`, chamado);
   }
 
-  logout() {
-    localStorage.clear();
+  update(chamado: Chamado): Observable<Chamado> {
+    return this.http.put<Chamado>(`${API_CONFIG.baseUrl}/chamados/${chamado.id}`, chamado);
   }
 }
