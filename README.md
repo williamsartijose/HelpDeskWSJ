@@ -3,7 +3,7 @@
 
 # Sobre o projeto
 
-Para conferir acesse o link do projeto dentro do netlify do Front end: https://williamsartijose.netlify.app/
+Para conferir acesse o link do projeto dentro do netlify do Front end: https://lnkd.in/dXzxWUWn
 
 
 DProjeto 👨‍🔧 Assistência Técnica - Wsj Informática
@@ -61,6 +61,35 @@ Para ter acesso ao codigo acesse o Link do projeto no GitHub 👉: https://lnkd.
 
 ## Back end
 Pré-requisitos: Java 11
+
+```bash
+# clonar repositório
+git clone https://github.com/williamsartijose/HelpDeskWSJ.git
+
+# entrar na pasta do projeto back end
+cd backend
+
+# executar o projeto
+./mvnw spring-boot:run
+```
+
+## Front end web
+Pré-requisitos: npm / yarn
+
+```bash
+# clonar repositório
+git clone https://github.com/williamsartijose/HelpDeskWSJ.git
+
+# entrar na pasta do projeto front end web
+cd front-web
+
+# instalar dependências
+yarn install
+
+# executar o projeto
+yarn start
+```
+
 
 
 # Autor
